@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=todolist
+      - POSTGRES_PASSWORD=todolist
+      - POSTGRES_DB=todolist
+    ports:
+      - '8432:5432'

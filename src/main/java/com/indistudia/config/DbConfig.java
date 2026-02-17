@@ -1,4 +1,8 @@
 package com.indistudia.config;
 
-public record DbConfig() {
+public record DbConfig(
+        String jdbcUrl,
+        String user,
+        String password
+) {
 }
